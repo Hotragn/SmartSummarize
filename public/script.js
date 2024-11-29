@@ -44,7 +44,7 @@ async function submitData(e) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer '+process.env.ACCESS_TOKEN
       },
       body: JSON.stringify({
         "inputs": text_to_summarize,
